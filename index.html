@@ -534,6 +534,134 @@
     </section>
     <!-- ===== /POTENSI KAMPUNG ===== -->
 
+
+    <!-- ===== FASILITAS UMUM ===== -->
+    <section id="fasilitas" 
+         x-data="{ 
+            fasilitasItems: [
+                {
+                    nama: 'Kantor Kampung Dosay',
+                    kategori: 'Pemerintahan',
+                    deskripsi: 'Pusat pelayanan administrasi dan tata kelola pemerintahan Kampung Dosay.',
+                    gambar: 'https://easysyntax.github.io/placeholders/Square%20Post%201080%20x%201080.svg',
+                    ikon: 'fa-solid fa-building-flag'
+                },
+                {
+                    nama: 'Puskesmas Dosay',
+                    kategori: 'Kesehatan',
+                    deskripsi: 'Fasilitas kesehatan utama untuk pelayanan medis masyarakat Sentani Barat.',
+                    gambar: './images/puskesmas-dosay.png',
+                    ikon: 'fa-solid fa-house-medical'
+                },
+                {
+                    nama: 'Poliklinik Kesehatan',
+                    kategori: 'Kesehatan',
+                    deskripsi: 'Layanan kesehatan tingkat pertama untuk penanganan medis warga sekitar.',
+                    gambar: 'https://easysyntax.github.io/placeholders/Square%20Post%201080%20x%201080.svg',
+                    ikon: 'fa-solid fa-user-doctor'
+                },
+                {
+                    nama: 'POLSEK Sentani Barat',
+                    kategori: 'Keamanan',
+                    deskripsi: 'Pos komando kepolisian sektor untuk menjaga keamanan dan ketertiban wilayah.',
+                    gambar: 'https://easysyntax.github.io/placeholders/Square%20Post%201080%20x%201080.svg',
+                    ikon: 'fa-solid fa-shield-halved'
+                },
+                {
+                    nama: 'SD Negeri Dosay',
+                    kategori: 'Pendidikan',
+                    deskripsi: 'Sarana pendidikan dasar formal untuk mencerdaskan generasi muda kampung.',
+                    gambar: './images/sd-negeri-dosay.png',
+                    ikon: 'fa-solid fa-school'
+                },
+                {
+                    nama: 'SMP Negeri 3 Sentani Barat',
+                    kategori: 'Pendidikan',
+                    deskripsi: 'Fasilitas pendidikan tingkat menengah pertama di kawasan Kampung Dosay.',
+                    gambar: 'https://easysyntax.github.io/placeholders/Square%20Post%201080%20x%201080.svg',
+                    ikon: 'fa-solid fa-graduation-cap'
+                },
+                {
+                    nama: 'Gereja Jemaat Lokal',
+                    kategori: 'Peribadatan',
+                    deskripsi: 'Rumah ibadah dan pusat kegiatan rohani bagi umat Kristiani setempat.',
+                    gambar: './images/gereja-gki-efata-dosay.png',
+                    ikon: 'fa-solid fa-church'
+                },
+                {
+                    nama: 'Masjid Kampung',
+                    kategori: 'Peribadatan',
+                    deskripsi: 'Sarana ibadah dan pembinaan keagamaan bagi umat Muslim di Dosay.',
+                    gambar: 'https://easysyntax.github.io/placeholders/Square%20Post%201080%20x%201080.svg',
+                    ikon: 'fa-solid fa-mosque'
+                },
+                {
+                    nama: 'Lapangan Sepak Bola',
+                    kategori: 'Olahraga',
+                    deskripsi: 'Wadah aktivitas olahraga, turnamen lokal, dan ruang publik komunitas.',
+                    gambar: './images/lapangan-sepak-bola.png',
+                    ikon: 'fa-solid fa-baseball-bat-ball'
+                },
+                {
+                    nama: 'Wisata Kali Dansari',
+                    kategori: 'Destinasi Wisata',
+                    deskripsi: 'Ekowisata pemandian alam dengan air pegunungan jernih dan asri.',
+                    gambar: './images/dosay-kali-dansari.png',
+                    ikon: 'fa-solid fa-compass-drafting'
+                },
+                {
+                    nama: 'Spot Foto Sunset & Sunrise',
+                    kategori: 'Destinasi Wisata',
+                    deskripsi: 'Area pandang estetis berlatarkan benteng alam Pegunungan Cycloop.',
+                    gambar: 'https://easysyntax.github.io/placeholders/Square%20Post%201080%20x%201080.svg',
+                    ikon: 'fa-solid fa-camera-retro'
+                }
+            ]
+         }"
+         class="py-16 md:py-24 bg-stone-100">
+         
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl md:text-5xl font-bold text-emerald-900 mb-3">Fasilitas Umum</h2>
+                <p class="text-xl text-emerald-700 max-w-2xl mx-auto">Infrastruktur pendukung pelayanan masyarakat, pendidikan, peribadatan, dan pariwisata di Kampung Dosay</p>
+                <div class="w-24 h-1 bg-amber-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <template x-for="(fasilitas, index) in fasilitasItems" :key="index">
+                    <div class="group bg-white border border-stone-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 rounded-lg flex flex-col justify-between">
+                        
+                        <div>
+                            <div class="relative aspect-video w-full overflow-hidden bg-stone-200">
+                                <img :src="fasilitas.gambar" 
+                                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                                    :alt="fasilitas.nama">
+                                <span class="absolute top-3 left-3 bg-emerald-900/90 text-amber-400 text-xs font-semibold px-3 py-1 rounded-full tracking-wide uppercase shadow-sm"
+                                    x-text="fasilitas.kategori"></span>
+                            </div>
+
+                            <div class="p-6">
+                                <div class="flex items-start gap-3 mb-2">
+                                    <div class="text-xl text-amber-500 mt-1 flex-shrink-0">
+                                        <i :class="fasilitas.ikon"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-emerald-950 leading-tight" x-text="fasilitas.nama"></h3>
+                                </div>
+                                <p class="text-stone-600 text-sm leading-relaxed" x-text="fasilitas.deskripsi"></p>
+                            </div>
+                        </div>
+
+                        <div class="px-6 pb-6 mt-2">
+                            <div class="w-full h-[2px] bg-stone-100 group-hover:bg-amber-400 transition-colors duration-300"></div>
+                        </div>
+
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+    <!-- ===== /FASILITAS UMUM ===== -->  
+
     <!-- ===== GALERI ===== -->
     <section id="galeri"
             x-data="{ 
