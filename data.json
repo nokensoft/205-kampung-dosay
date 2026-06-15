@@ -1,0 +1,61 @@
+{
+  "_info": "Ubah nilai pada file ini untuk menyesuaikan website ke kampung/desa lain (nama situs, logo, favicon, kontak, meta, dll.). Tidak perlu menyentuh index.html.",
+
+  "site": {
+    "name": "Kampung Dosay",
+    "logoText": {
+      "primary": "KAMPUNG",
+      "secondary": "DOSAY"
+    },
+    "tagline": "Distrik Sentani Barat • Kabupaten Jayapura • Provinsi Papua",
+    "url": "https://kampungdosay.id/",
+    "logo": "./images/logo-kabupaten-jayapura.png",
+    "favicon": "./images/logo-kabupaten-jayapura.png",
+    "themeColor": "#1a3c34"
+  },
+
+  "meta": {
+    "title": "Kampung Dosay - Distrik Sentani Barat, Jayapura",
+    "description": "Kampung Dosay, Distrik Sentani Barat, Kabupaten Jayapura, Provinsi Papua. Kaya akan budaya, alam, dan tradisi Suku Sentani.",
+    "keywords": "Kampung Dosay, Sentani Barat, Kabupaten Jayapura, Papua, Danau Sentani, wisata kampung, budaya Sentani, adat Papua",
+    "author": "Kampung Dosay",
+    "ogTitle": "Kampung Dosay - Distrik Sentani Barat, Jayapura",
+    "ogDescription": "Kampung yang terletak di bawah kaki Gunung Cyloop, memiliki potensi sumber daya alam dan daya tarik wisata.",
+    "ogImage": "./images/logo-kabupaten-jayapura.png",
+    "twitterTitle": "Kampung Dosay - Distrik Sentani Barat, Jayapura",
+    "twitterDescription": "Kampung adat di Distrik Sentani Barat, Kab. Jayapura, Papua",
+    "twitterImage": "./images/logo-kabupaten-jayapura.png"
+  },
+
+  "hero": {
+    "title": "KAMPUNG DOSAY",
+    "subtitle": "Distrik Sentani Barat • Kabupaten Jayapura • Papua",
+    "description": "Kampung yang terletak di Distrik Sentani Barat, Kab. Jayapura, Papua, memiliki potensi sumber daya alam dan menawarkan keindahan alam Papua yang tak ternilai.",
+    "slides": [
+      "./images/gallery/dosay-anggrek.png",
+      "./images/gallery/dosay-berkemah-dansari.png",
+      "./images/gallery/dosay-kali-dansari.png",
+      "./images/gallery/dosay-traditional-dance.png"
+    ]
+  },
+
+  "contact": {
+    "addressHtml": "Kampung Dosay, Distrik Sentani Barat,<br>Kabupaten Jayapura, Provinsi Papua",
+    "phoneDisplay": "+62 8xx-xxxx-xxxx",
+    "whatsappNumber": "628xxxxxxxxx",
+    "whatsappMessage": "Halo Admin Kampung Dosay, saya ingin bertanya seputar Kampung Dosay.",
+    "email": "kampungdosay@gmail.com",
+    "operationalHours": "Senin – Jumat: 08.00 – 16.00 WIT",
+    "social": {
+      "facebook": "#",
+      "instagram": "#"
+    }
+  },
+
+  "footer": {
+    "copyright": "© 2026 Pemerintah Kampung Dosay. Hak cipta dilindungi.",
+    "note": "Menjaga warisan budaya Lembah Moi dan keindahan alam Pegunungan Cycloop — Papua.",
+    "poweredByName": "Nokensoft.com",
+    "poweredByUrl": "https://nokensoft.com"
+  }
+}
