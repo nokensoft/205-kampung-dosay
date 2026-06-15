@@ -1,6 +1,12 @@
 {
   "_info": "Ubah nilai pada file ini untuk menyesuaikan website ke kampung/desa lain (nama situs, logo, favicon, kontak, meta, dll.). Tidak perlu menyentuh index.html.",
 
+  "topbar": {
+    "textHtml": "Website ini masih dalam <strong>tahap pengembangan</strong> dan merupakan bentuk usulan atau draf yang dibuat serta diajukan oleh",
+    "linkName": "Nokensoft.com",
+    "linkUrl": "https://nokensoft.com"
+  },
+
   "site": {
     "name": "Kampung Dosay",
     "logoText": {
